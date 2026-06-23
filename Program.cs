@@ -1,25 +1,12 @@
-﻿// Questão 2: Controle de idade da turma
+﻿using System;
 
-int[] idades = new int[5];
-int menores = 0;
-int maiores = 0;
-
-// Preenchimento do vetor e contagem
-for (int i = 0; i < 8; i++)
+namespace Lista03
 {
-    Console.Write("Informe a idade do estudante: ");
-    idades[i] = int.Parse(Console.ReadLine()!);
-
-    if (idades[i] < 18)
+    internal class Program
     {
-        menores++;
-    }
-    else
-    {
-        maiores++;
+        static void Main(string[] args)
+        {
+            Menu.Mostrar();
+        }
     }
 }
-
-// Saída
-Console.WriteLine($"quantidade de menores de idade: {menores}");
-Console.WriteLine($"quantidade de maiores de idade: {maiores}");
